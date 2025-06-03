@@ -1,0 +1,70 @@
+DELETE FROM MENU;
+
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Margherita Pizza', 'Classic cheese pizza with a tomato base', TRUE, '/HungerBox/images/margherita.jpg', 300, 10, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Pepperoni Pizza', 'Spicy pepperoni slices on a cheesy pizza base', FALSE, '/HungerBox/images/pepperoni.jpg', 400, 8, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Veggie Burger', 'Grilled veggie patty with fresh veggies and sauce', TRUE, '/HungerBox/images/veggie_burger.jpg', 250, 5, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Chicken Burger', 'Juicy grilled chicken patty with lettuce and sauce', FALSE, '/HungerBox/images/chicken_burger.jpg', 300, 7, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Pasta Alfredo', 'Creamy Alfredo pasta with garlic and herbs', TRUE, '/HungerBox/images/pasta_alfredo.jpg', 350, 6, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Spaghetti Bolognese', 'Classic spaghetti with rich meat sauce', FALSE, '/HungerBox/images/spaghetti_bolognese.jpg', 400, 4, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Caesar Salad', 'Fresh lettuce, croutons, and Caesar dressing', TRUE, '/HungerBox/images/caesar_salad.jpg', 200, 12, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Grilled Chicken Salad', 'Grilled chicken with mixed greens and vinaigrette', FALSE, '/HungerBox/images/grilled_chicken_salad.jpg', 300, 9, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Garlic Bread', 'Crispy garlic bread with butter and herbs', TRUE, '/HungerBox/images/garlic_bread.jpg', 150, 15, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Tiramisu', 'Classic Italian coffee-flavored dessert', TRUE, '/HungerBox/images/tiramisu.jpg', 250, 5, TRUE);
+
+
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Paneer Tikka', 'Grilled cottage cheese with spices and herbs', TRUE, '/HungerBox/images/paneer_tikka.jpg', 350, 10, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Chicken Wings', 'Spicy chicken wings with BBQ sauce', FALSE, '/HungerBox/images/chicken_wings.jpg', 450, 8, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Veg Hakka Noodles', 'Stir-fried noodles with mixed vegetables', TRUE, '/HungerBox/images/veg_hakka_noodles.jpg', 300, 15, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Chicken Fried Rice', 'Rice fried with chicken and vegetables', FALSE, '/HungerBox/images/chicken_fried_rice.jpg', 350, 6, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Masala Dosa', 'Crispy dosa with spiced potato filling', TRUE, '/HungerBox/images/masala_dosa.jpg', 200, 12, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Butter Chicken', 'Creamy chicken curry with butter and spices', FALSE, '/HungerBox/images/butter_chicken.jpg', 500, 5, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Chole Bhature', 'Spicy chickpea curry with fluffy fried bread', TRUE, '/HungerBox/images/chole_bhature.jpg', 250, 10, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Mutton Biryani', 'Fragrant basmati rice cooked with mutton and spices', FALSE, '/HungerBox/images/mutton_biryani.jpg', 550, 4, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Falafel Wrap', 'Middle Eastern wrap with falafel and veggies', TRUE, '/HungerBox/images/falafel_wrap.jpg', 300, 9, TRUE);
+
+INSERT INTO Menu (dishName, dishDescription, veg, imgUrl, price, quantity, status) VALUES 
+('Chocolate Brownie', 'Rich chocolate brownie with a fudgy texture', TRUE, '/HungerBox/images/chocolate_brownie.jpg', 150, 7, TRUE);
+
+
+
+
+select * from MENU;
+insert into admin values('admin','admin@gmail.com','1234567890','admin123')

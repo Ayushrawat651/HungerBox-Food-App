@@ -1,0 +1,251 @@
+@charset "ISO-8859-1";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #787070;
+    line-height: 1.6;
+    background: url('../images/img1.jpg')no-repeat center center/cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+nav {
+    width: 100%;
+	background-color: rgba(120, 112, 112, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 30000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: fixed;
+    top: 0px;
+}
+
+.logo{
+	padding-top:.2cm;
+	padding-left:.2cm;
+	display:flex;
+}
+.logo a {
+	padding-top:.2cm;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.logo-img {
+    margin-right: 0.5cm;
+    height: 50px; /* Adjust the size of the logo */
+    width: auto;
+    display: block;
+}
+nav .logo {
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: larger;
+    gap: 1.5rem;
+}
+.nav-links{
+	color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right:2.5cm;
+
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size:large;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+}
+
+.profile .profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .username {
+    color: white;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.profile .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.profile:hover .dropdown {
+    display: block;
+}
+
+.profile .dropdown a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.profile .dropdown a:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 180px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 30px;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.edit-save-button,
+.cancel-button {
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cancel-button {
+    background-color: #6c757d;
+}
+/* Style for the overall history section */
+#history {
+    background-color: white; /* Dark background */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif; /* Clean, modern font */
+    padding: 20px; /* Space around the content */
+    border-radius: 8px; /* Smooth corners */
+    max-width: 800px; /* Restrict width */
+    margin: 20px auto; /* Center align with some margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Style for individual history items */
+#history-items {
+    background-color: #808080; /* Slightly lighter background for items */
+    padding: 15px; /* Space inside each item */
+    margin: 10px 0; /* Space between items */
+    border-radius: 5px; /* Smooth corners */
+    border: 1px solid #555; /* Subtle border to distinguish items */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for history items */
+#history-items:hover {
+    background-color: #c0c0c0; /* Change background on hover */
+    transform: translateY(-5px); /* Lift item slightly */
+}
+
+/* Text styling for order details */
+#history-items p {
+    margin: 5px 0; /* Space between lines */
+    font-size: 16px; /* Readable text size */
+    line-height: 1.5; /* Good line spacing */
+}
+
+/* Style for empty history message */
+#history .empty-message {
+    text-align: center;
+    font-size: 18px;
+    color: #ccc; /* Light gray for empty message */
+    margin-top: 20px;
+}
+
+.success-message {
+    color: #28a745;
+    text-align: center;
+}
+
+.error-message {
+    color: #dc3545;
+    text-align: center;
+}
+
+#save{
+	display: none;
+}
+
+h3{
+	    margin-left: 30px;
+    margin-top: 50px;
+}
+
+

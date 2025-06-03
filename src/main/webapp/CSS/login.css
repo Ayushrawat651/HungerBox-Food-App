@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #787070;
+    line-height: 1.6;
+    background: url('../images/img1.jpg')no-repeat center center/cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation Bar Styling */
+nav {
+    width: 100%;
+	background-color: rgba(120, 112, 112, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 30000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+        position: fixed;
+    top: 0px;
+}
+
+.logo{
+	padding-top:.2cm;
+	padding-left:.2cm;
+	display:flex;
+}
+.logo a {
+	padding-top:.2cm;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.logo-img {
+    margin-right: 0.5cm;
+    height: 50px; /* Adjust the size of the logo */
+    width: auto;
+    display: block;
+}
+nav .logo {
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: larger;
+    gap: 1.5rem;
+}
+.nav-links{
+	color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right:2.5cm;
+
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size:large;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+}
+
+.profile .profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .username {
+    color: white;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.profile .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.profile:hover .dropdown {
+    display: block;
+}
+
+.profile .dropdown a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.profile .dropdown a:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+
+
+.login-container {
+	    margin-top: 180px;
+    background-color: white;
+    padding: 30px;
+        margin-left:auto;
+    margin-right:auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container select,
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    background-color: #ff4500;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #ff6347;
+}
+
+.login-container .register-link {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-container .register-link:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
